@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 180" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .llm-box { fill: #d0bfff; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .risk-box { fill: #ffc9c9; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .council-box { fill: #fcc2d7; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .ok-box { fill: #b2f2bb; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .small { font-size: 11px; fill: #495057; text-anchor: middle; dominant-baseline: central; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <!-- LLM produces output -->
+  <rect class="llm-box" x="20" y="50" width="120" height="70"/>
+  <text class="title" x="80" y="75">LLM</text>
+  <text class="small" x="80" y="100">produces output</text>
+
+  <line class="arrow" x1="142" y1="85" x2="178" y2="85"/>
+
+  <!-- Output might be good or bad -->
+  <rect class="risk-box" x="180" y="30" width="130" height="50"/>
+  <text class="small" x="245" y="48">Hallucination</text>
+  <text class="small" x="245" y="66">Poor quality</text>
+
+  <rect x="180" y="90" width="130" height="50" fill="#e7f5ff" stroke="#1e1e1e" stroke-width="1.5" rx="6"/>
+  <text class="small" x="245" y="108">Good output</text>
+  <text class="small" x="245" y="126">Correct code</text>
+
+  <!-- Both go to council -->
+  <line class="arrow" x1="312" y1="55" x2="368" y2="85"/>
+  <line class="arrow" x1="312" y1="115" x2="368" y2="85"/>
+
+  <!-- Council assesses -->
+  <rect class="council-box" x="370" y="45" width="140" height="80"/>
+  <text class="title" x="440" y="70">COUNCIL</text>
+  <line x1="390" y1="82" x2="490" y2="82" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="small" x="440" y="100">Assesses outcome</text>
+  <text class="small" x="440" y="116">Multiple roles vote</text>
+
+  <!-- Outcomes -->
+  <line class="arrow" x1="512" y1="65" x2="558" y2="45"/>
+  <rect class="ok-box" x="560" y="25" width="120" height="40"/>
+  <text class="title" x="620" y="45">Accepted</text>
+
+  <line class="arrow" x1="512" y1="105" x2="558" y2="125"/>
+  <rect class="risk-box" x="560" y="105" width="120" height="40"/>
+  <text class="title" x="620" y="125">Rework</text>
+
+  <text class="small" x="350" y="170" font-style="italic" fill="#868e96">Hallucinations are accepted as a risk, mitigated via council consensus</text>
+</svg>

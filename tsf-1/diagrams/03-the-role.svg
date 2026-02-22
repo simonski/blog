@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .outer { fill: #a5d8ff; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .section { fill: #dbe4ff; stroke: #1e1e1e; stroke-width: 1; rx: 4; opacity: 0.7; }
+    .title { font-size: 18px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; }
+    .heading { font-size: 11px; fill: #495057; font-weight: bold; }
+    .detail { font-size: 11px; fill: #495057; }
+    .subtitle { font-size: 12px; fill: #495057; text-anchor: middle; font-style: italic; }
+  </style>
+
+  <rect class="outer" x="50" y="10" width="400" height="260"/>
+
+  <text class="title" x="250" y="42">ROLE</text>
+  <text class="subtitle" x="250" y="60">e.g. "Business Analyst"</text>
+
+  <line x1="80" y1="70" x2="420" y2="70" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+
+  <rect class="section" x="70" y="80" width="170" height="80"/>
+  <text class="heading" x="82" y="98">Description</text>
+  <text class="detail" x="82" y="114">Job function and scope</text>
+  <text class="detail" x="82" y="130">Domain knowledge</text>
+  <text class="detail" x="82" y="146">Institutional memory</text>
+
+  <rect class="section" x="260" y="80" width="170" height="80"/>
+  <text class="heading" x="272" y="98">Motivation</text>
+  <text class="detail" x="272" y="114">Objectives</text>
+  <text class="detail" x="272" y="130">Quality criteria</text>
+  <text class="detail" x="272" y="146">Success measures</text>
+
+  <rect class="section" x="70" y="175" width="170" height="80"/>
+  <text class="heading" x="82" y="193">Boundaries</text>
+  <text class="detail" x="82" y="209">What is in scope</text>
+  <text class="detail" x="82" y="225">What is out of scope</text>
+  <text class="detail" x="82" y="241">Escalation rules</text>
+
+  <rect class="section" x="260" y="175" width="170" height="80"/>
+  <text class="heading" x="272" y="193">Relationships</text>
+  <text class="detail" x="272" y="209">Inputs from roles</text>
+  <text class="detail" x="272" y="225">Outputs to roles</text>
+  <text class="detail" x="272" y="241">Council participation</text>
+</svg>

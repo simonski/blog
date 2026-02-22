@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 260" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .operator-box { fill: #b2f2bb; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .def-box { fill: #f8f9fa; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .role-box { fill: #a5d8ff; stroke: #1e1e1e; stroke-width: 1; rx: 4; }
+    .skill-box { fill: #d0bfff; stroke: #1e1e1e; stroke-width: 1; rx: 4; }
+    .workflow-box { fill: #ffec99; stroke: #1e1e1e; stroke-width: 1; rx: 4; }
+    .system-box { fill: #fcc2d7; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .small { font-size: 11px; fill: #495057; text-anchor: middle; dominant-baseline: central; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .feedback { stroke: #e67700; stroke-width: 1.5; fill: none; marker-end: url(#orange-arrow); stroke-dasharray: 6 3; }
+    .section-label { font-size: 10px; fill: #868e96; font-style: italic; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+    <marker id="orange-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e67700"/>
+    </marker>
+  </defs>
+
+  <!-- Operator -->
+  <rect class="operator-box" x="20" y="70" width="120" height="80"/>
+  <text class="title" x="80" y="100">OPERATOR</text>
+  <text class="small" x="80" y="120">(Human)</text>
+  <text class="small" x="80" y="138">Bootstraps</text>
+
+  <!-- Defines arrow -->
+  <line class="arrow" x1="142" y1="110" x2="178" y2="110"/>
+  <text class="section-label" x="160" y="100">defines</text>
+
+  <!-- Definitions -->
+  <rect class="def-box" x="180" y="20" width="200" height="190"/>
+
+  <rect class="role-box" x="200" y="35" width="80" height="30"/>
+  <text class="small" x="240" y="50">BA Role</text>
+  <rect class="role-box" x="290" y="35" width="80" height="30"/>
+  <text class="small" x="330" y="50">QA Role</text>
+
+  <rect class="skill-box" x="200" y="80" width="80" height="30"/>
+  <text class="small" x="240" y="95">Code Gen</text>
+  <rect class="skill-box" x="290" y="80" width="80" height="30"/>
+  <text class="small" x="330" y="95">Testing</text>
+
+  <rect class="workflow-box" x="200" y="125" width="170" height="30"/>
+  <text class="small" x="285" y="140">Workflow + Acceptance</text>
+
+  <rect x="200" y="168" width="170" height="30" rx="4" fill="#e7f5ff" stroke="#1e1e1e" stroke-width="1"/>
+  <text class="small" x="285" y="183">Requirements</text>
+
+  <!-- Arrow to system -->
+  <line class="arrow" x1="382" y1="110" x2="418" y2="110"/>
+
+  <!-- System runs -->
+  <rect class="system-box" x="420" y="55" width="140" height="110"/>
+  <text class="title" x="490" y="82">TSF</text>
+  <line x1="440" y1="94" x2="540" y2="94" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="small" x="490" y="112">Runs stories</text>
+  <text class="small" x="490" y="130">Councils decide</text>
+  <text class="small" x="490" y="148">Produces outcomes</text>
+
+  <!-- Feedback to operator -->
+  <path class="feedback" d="M 490 167 L 490 240 L 80 240 L 80 152"/>
+  <text class="section-label" x="285" y="234">iterate: refine roles, skills, workflows</text>
+</svg>

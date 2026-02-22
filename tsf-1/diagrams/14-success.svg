@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 220" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .metric-box { fill: #e7f5ff; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: start; dominant-baseline: central; }
+    .small { font-size: 11px; fill: #495057; text-anchor: start; dominant-baseline: central; }
+    .check { font-size: 16px; fill: #2b8a3e; text-anchor: middle; dominant-baseline: central; }
+    .header { font-size: 15px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <text class="header" x="275" y="20">Success Criteria (Directional)</text>
+
+  <!-- Metric 1 -->
+  <rect class="metric-box" x="30" y="40" width="490" height="38"/>
+  <text class="check" x="52" y="59">?</text>
+  <text class="title" x="70" y="52">Autonomy</text>
+  <text class="small" x="70" y="68">Requirement to working code without human intervention</text>
+
+  <!-- Metric 2 -->
+  <rect class="metric-box" x="30" y="84" width="490" height="38"/>
+  <text class="check" x="52" y="103">?</text>
+  <text class="title" x="70" y="96">Defect Detection</text>
+  <text class="small" x="70" y="112">Council catches defects a single agent would miss</text>
+
+  <!-- Metric 3 -->
+  <rect class="metric-box" x="30" y="128" width="490" height="38"/>
+  <text class="check" x="52" y="147">?</text>
+  <text class="title" x="70" y="140">Cost Efficiency</text>
+  <text class="small" x="70" y="156">Token cost per story point vs human team cost</text>
+
+  <!-- Metric 4 -->
+  <rect class="metric-box" x="30" y="172" width="490" height="38"/>
+  <text class="check" x="52" y="191">?</text>
+  <text class="title" x="70" y="184">Auditability</text>
+  <text class="small" x="70" y="200">Human reviewer can understand why decisions were made</text>
+</svg>

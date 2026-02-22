@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .role-box { fill: #a5d8ff; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .vote-yes { fill: #b2f2bb; stroke: #2b8a3e; stroke-width: 1.5; rx: 12; }
+    .vote-no { fill: #ffc9c9; stroke: #c92a2a; stroke-width: 1.5; rx: 12; }
+    .result-box { fill: #f8f9fa; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .small { font-size: 11px; fill: #495057; text-anchor: middle; dominant-baseline: central; }
+    .vote-text { font-size: 11px; fill: #1e1e1e; text-anchor: middle; dominant-baseline: central; font-weight: bold; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .section-title { font-size: 12px; fill: #868e96; text-anchor: middle; font-style: italic; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <text class="section-title" x="300" y="20">Each role in the council votes on the outcome</text>
+
+  <!-- Roles voting -->
+  <rect class="role-box" x="40" y="50" width="120" height="45"/>
+  <text class="title" x="100" y="66">BA</text>
+  <text class="small" x="100" y="83">"meets spec"</text>
+
+  <rect class="role-box" x="40" y="120" width="120" height="45"/>
+  <text class="title" x="100" y="136">Architect</text>
+  <text class="small" x="100" y="153">"sound design"</text>
+
+  <rect class="role-box" x="40" y="190" width="120" height="45"/>
+  <text class="title" x="100" y="206">QA</text>
+  <text class="small" x="100" y="223">"tests pass"</text>
+
+  <!-- Votes -->
+  <line class="arrow" x1="162" y1="72" x2="228" y2="72"/>
+  <ellipse class="vote-yes" cx="260" cy="72" rx="28" ry="16"/>
+  <text class="vote-text" x="260" y="72">YES</text>
+
+  <line class="arrow" x1="162" y1="142" x2="228" y2="142"/>
+  <ellipse class="vote-yes" cx="260" cy="142" rx="28" ry="16"/>
+  <text class="vote-text" x="260" y="142">YES</text>
+
+  <line class="arrow" x1="162" y1="212" x2="228" y2="212"/>
+  <ellipse class="vote-no" cx="260" cy="212" rx="28" ry="16"/>
+  <text class="vote-text" x="260" y="212">NO</text>
+
+  <!-- Arrow to result -->
+  <line class="arrow" x1="290" y1="72" x2="370" y2="130"/>
+  <line class="arrow" x1="290" y1="142" x2="370" y2="140"/>
+  <line class="arrow" x1="290" y1="212" x2="370" y2="150"/>
+
+  <!-- Result -->
+  <rect class="result-box" x="372" y="100" width="200" height="90"/>
+  <text class="title" x="472" y="125">NO CONSENSUS</text>
+  <line x1="392" y1="138" x2="552" y2="138" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="small" x="472" y="158">2/3 agree, 1/3 reject</text>
+  <text class="small" x="472" y="176">Work returns for rework</text>
+
+  <!-- Escalation note -->
+  <rect x="340" y="220" width="240" height="60" rx="6" fill="#fff3bf" stroke="#f59f00" stroke-width="1" stroke-dasharray="4 3"/>
+  <text class="small" x="460" y="242">If no consensus possible:</text>
+  <text class="small" x="460" y="260" font-weight="bold">ESCALATE to human</text>
+</svg>

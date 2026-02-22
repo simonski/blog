@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 200" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .role-box { fill: #a5d8ff; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .story-box { fill: #ffec99; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .title { font-size: 16px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .detail { font-size: 11px; fill: #495057; text-anchor: middle; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .arrow-label { font-size: 11px; fill: #495057; text-anchor: middle; font-style: italic; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <!-- Role -->
+  <rect class="role-box" x="30" y="40" width="200" height="120"/>
+  <text class="title" x="130" y="75">ROLE</text>
+  <text class="detail" x="130" y="100">Description</text>
+  <text class="detail" x="130" y="116">Motivation</text>
+  <text class="detail" x="130" y="132">Boundaries</text>
+
+  <!-- Arrow: works on -->
+  <line class="arrow" x1="232" y1="100" x2="288" y2="100"/>
+  <text class="arrow-label" x="260" y="90">works on</text>
+
+  <!-- Story -->
+  <rect class="story-box" x="290" y="30" width="330" height="140"/>
+  <text class="title" x="455" y="60">STORY</text>
+  <line x1="310" y1="75" x2="600" y2="75" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="detail" x="455" y="95">Objective</text>
+  <text class="detail" x="455" y="113">Acceptance criteria</text>
+  <text class="detail" x="455" y="131">History (who did what, when)</text>
+  <text class="detail" x="455" y="149">Current state</text>
+</svg>

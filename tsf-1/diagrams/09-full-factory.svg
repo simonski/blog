@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .role-box { fill: #a5d8ff; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .story-box { fill: #ffec99; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .council-box { fill: #fcc2d7; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .skill-box { fill: #d0bfff; stroke: #1e1e1e; stroke-width: 1; rx: 4; }
+    .operator-box { fill: #b2f2bb; stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .system-box { fill: #f8f9fa; stroke: #1e1e1e; stroke-width: 1; rx: 6; stroke-dasharray: 6 3; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .small { font-size: 10px; fill: #495057; text-anchor: middle; dominant-baseline: central; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .flow { stroke: #e67700; stroke-width: 2; fill: none; marker-end: url(#orange-arrow); }
+    .dashed { stroke: #868e96; stroke-width: 1; stroke-dasharray: 4 3; fill: none; marker-end: url(#grey-arrow); }
+    .section-label { font-size: 11px; fill: #868e96; font-style: italic; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+    <marker id="orange-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e67700"/>
+    </marker>
+    <marker id="grey-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#868e96"/>
+    </marker>
+  </defs>
+
+  <!-- Operator -->
+  <rect class="operator-box" x="20" y="20" width="160" height="100"/>
+  <text class="title" x="100" y="50">OPERATOR</text>
+  <text class="small" x="100" y="72">(Human)</text>
+  <text class="small" x="100" y="90">Bootstraps roles,</text>
+  <text class="small" x="100" y="105">skills, workflows</text>
+
+  <!-- Defines arrows -->
+  <line class="dashed" x1="182" y1="50" x2="248" y2="50"/>
+  <text class="section-label" x="215" y="42">defines</text>
+
+  <!-- Role definitions pool -->
+  <rect class="system-box" x="250" y="15" width="200" height="110"/>
+  <text class="section-label" x="350" y="32">Role Definitions</text>
+  <rect class="role-box" x="265" y="42" width="80" height="30"/>
+  <text class="small" x="305" y="57">BA</text>
+  <rect class="role-box" x="355" y="42" width="80" height="30"/>
+  <text class="small" x="395" y="57">Architect</text>
+  <rect class="role-box" x="265" y="82" width="80" height="30"/>
+  <text class="small" x="305" y="97">Engineer</text>
+  <rect class="role-box" x="355" y="82" width="80" height="30"/>
+  <text class="small" x="395" y="97">QA</text>
+
+  <!-- Skills pool -->
+  <rect class="system-box" x="480" y="15" width="200" height="110"/>
+  <text class="section-label" x="580" y="32">Skills</text>
+  <rect class="skill-box" x="495" y="42" width="80" height="30"/>
+  <text class="small" x="535" y="57">Code Gen</text>
+  <rect class="skill-box" x="585" y="42" width="80" height="30"/>
+  <text class="small" x="625" y="57">Test Write</text>
+  <rect class="skill-box" x="495" y="82" width="80" height="30"/>
+  <text class="small" x="535" y="97">Req Analysis</text>
+  <rect class="skill-box" x="585" y="82" width="80" height="30"/>
+  <text class="small" x="625" y="97">Review</text>
+
+  <line class="dashed" x1="452" y1="70" x2="478" y2="70"/>
+
+  <!-- Story enters -->
+  <rect class="story-box" x="20" y="180" width="140" height="60"/>
+  <text class="title" x="90" y="203">STORY</text>
+  <text class="small" x="90" y="223">requirement</text>
+
+  <!-- Main flow -->
+  <line class="flow" x1="162" y1="210" x2="198" y2="210"/>
+
+  <!-- Phase 1: Role works -->
+  <rect class="role-box" x="200" y="180" width="130" height="60"/>
+  <text class="title" x="265" y="203">BA</text>
+  <text class="small" x="265" y="223">analyses story</text>
+
+  <line class="flow" x1="332" y1="210" x2="368" y2="210"/>
+
+  <!-- Council 1 -->
+  <rect class="council-box" x="370" y="175" width="130" height="70"/>
+  <text class="title" x="435" y="198">COUNCIL</text>
+  <text class="small" x="435" y="218">BA + Arch assess</text>
+  <text class="small" x="435" y="234">OK</text>
+
+  <line class="flow" x1="502" y1="210" x2="538" y2="210"/>
+
+  <!-- Phase 2 -->
+  <rect class="role-box" x="540" y="180" width="130" height="60"/>
+  <text class="title" x="605" y="203">Engineer</text>
+  <text class="small" x="605" y="223">implements</text>
+
+  <line class="flow" x1="672" y1="210" x2="708" y2="210"/>
+
+  <!-- Council 2 -->
+  <rect class="council-box" x="710" y="175" width="130" height="70"/>
+  <text class="title" x="775" y="198">COUNCIL</text>
+  <text class="small" x="775" y="218">Eng + QA assess</text>
+  <text class="small" x="775" y="234">NOT OK</text>
+
+  <!-- Rework loop -->
+  <line stroke="#c92a2a" stroke-width="1.5" fill="none" x1="775" y1="247" x2="775" y2="330"/>
+  <line stroke="#c92a2a" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" x1="775" y1="330" x2="208" y2="330"/>
+  <line stroke="#c92a2a" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" x1="208" y1="330" x2="208" y2="242"/>
+  <text font-size="10px" fill="#c92a2a" x="490" y="322" text-anchor="middle" font-style="italic">rework loop</text>
+
+  <!-- Living Document -->
+  <rect class="story-box" x="300" y="380" width="300" height="120"/>
+  <text class="title" x="450" y="403">LIVING DOCUMENT</text>
+  <line x1="320" y1="413" x2="580" y2="413" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <rect x="315" y="420" width="270" height="22" rx="3" fill="#e7f5ff" stroke="#1e1e1e" stroke-width="0.5"/>
+  <text class="small" x="450" y="431">t=1  BA: wrote requirements</text>
+  <rect x="315" y="446" width="270" height="22" rx="3" fill="#d0ebff" stroke="#1e1e1e" stroke-width="0.5"/>
+  <text class="small" x="450" y="457">t=2  Council: approved analysis</text>
+  <rect x="315" y="472" width="270" height="22" rx="3" fill="#a5d8ff" stroke="#1e1e1e" stroke-width="0.5"/>
+  <text class="small" x="450" y="483">t=3  Engineer: implemented, tests fail</text>
+
+  <!-- Connection from flow to living doc -->
+  <line class="dashed" x1="435" y1="247" x2="435" y2="378"/>
+  <text class="section-label" x="480" y="360">accumulates</text>
+
+  <!-- Escalation -->
+  <rect x="700" y="400" width="170" height="70" rx="6" fill="#fff3bf" stroke="#f59f00" stroke-width="1.5"/>
+  <text class="title" x="785" y="422">ESCALATION</text>
+  <text class="small" x="785" y="442">No consensus?</text>
+  <text class="small" x="785" y="458">Defer to human</text>
+
+  <line class="dashed" x1="775" y1="330" x2="785" y2="398"/>
+</svg>

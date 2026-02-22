@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .pillar { stroke: #1e1e1e; stroke-width: 2; rx: 8; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .small { font-size: 11px; fill: #495057; text-anchor: middle; dominant-baseline: central; }
+    .header { font-size: 16px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .base { fill: #f8f9fa; stroke: #1e1e1e; stroke-width: 2; rx: 6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <!-- Base -->
+  <rect class="base" x="50" y="150" width="600" height="40"/>
+  <text class="title" x="350" y="170">TSF: Model roles &amp; processes, then automate</text>
+
+  <!-- Pillar 1: Trust -->
+  <rect class="pillar" x="80" y="30" width="160" height="110" fill="#ffc9c9"/>
+  <text class="title" x="160" y="55">Trust</text>
+  <line x1="100" y1="68" x2="220" y2="68" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="small" x="160" y="88">How do we trust</text>
+  <text class="small" x="160" y="106">code created by</text>
+  <text class="small" x="160" y="124">a machine?</text>
+
+  <!-- Pillar 2: Repeatability -->
+  <rect class="pillar" x="270" y="30" width="160" height="110" fill="#ffec99"/>
+  <text class="title" x="350" y="55">Repeatability</text>
+  <line x1="290" y1="68" x2="410" y2="68" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="small" x="350" y="88">Same input</text>
+  <text class="small" x="350" y="106">yields expected</text>
+  <text class="small" x="350" y="124">outcome</text>
+
+  <!-- Pillar 3: Provability -->
+  <rect class="pillar" x="460" y="30" width="160" height="110" fill="#a5d8ff"/>
+  <text class="title" x="540" y="55">Provability</text>
+  <line x1="480" y1="68" x2="600" y2="68" stroke="#1e1e1e" stroke-width="0.5" opacity="0.3"/>
+  <text class="small" x="540" y="88">Show workings:</text>
+  <text class="small" x="540" y="106">WHY did this</text>
+  <text class="small" x="540" y="124">outcome occur?</text>
+</svg>

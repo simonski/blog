@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 220" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .human-box { fill: #ffc9c9; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .model-box { fill: #b2f2bb; stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .title { font-size: 14px; fill: #1e1e1e; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    .small { font-size: 11px; fill: #495057; text-anchor: middle; dominant-baseline: central; }
+    .section-label { font-size: 12px; fill: #868e96; font-style: italic; text-anchor: middle; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .vs { font-size: 18px; fill: #868e96; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <text class="section-label" x="190" y="18">Human Teams</text>
+  <text class="section-label" x="570" y="18">Modelled System</text>
+
+  <!-- Human problems -->
+  <rect class="human-box" x="30" y="35" width="150" height="50"/>
+  <text class="title" x="105" y="52">Bad Day</text>
+  <text class="small" x="105" y="72">Bug slips through</text>
+
+  <rect class="human-box" x="200" y="35" width="150" height="50"/>
+  <text class="title" x="275" y="52">Adhoc Meeting</text>
+  <text class="small" x="275" y="72">Undocumented decision</text>
+
+  <rect class="human-box" x="30" y="105" width="150" height="50"/>
+  <text class="title" x="105" y="122">Contradiction</text>
+  <text class="small" x="105" y="142">PO changes spec</text>
+
+  <rect class="human-box" x="200" y="105" width="150" height="50"/>
+  <text class="title" x="275" y="122">QA on Vacation</text>
+  <text class="small" x="275" y="142">No review happens</text>
+
+  <!-- VS -->
+  <text class="vs" x="400" y="95">&#x2192;</text>
+
+  <!-- Modelled system -->
+  <rect class="model-box" x="440" y="35" width="130" height="50"/>
+  <text class="title" x="505" y="52">Roles</text>
+  <text class="small" x="505" y="72">Always available</text>
+
+  <rect class="model-box" x="590" y="35" width="130" height="50"/>
+  <text class="title" x="655" y="52">Council</text>
+  <text class="small" x="655" y="72">Always reviews</text>
+
+  <rect class="model-box" x="440" y="105" width="130" height="50"/>
+  <text class="title" x="505" y="122">Living Doc</text>
+  <text class="small" x="505" y="142">All decisions recorded</text>
+
+  <rect class="model-box" x="590" y="105" width="130" height="50"/>
+  <text class="title" x="655" y="122">Consistency</text>
+  <text class="small" x="655" y="142">No bad days</text>
+
+  <!-- Footer -->
+  <text class="small" x="190" y="185" fill="#c92a2a" font-style="italic">Inconsistent, undocumented</text>
+  <text class="small" x="570" y="185" fill="#2b8a3e" font-style="italic">Consistent, modelled, auditable</text>
+</svg>

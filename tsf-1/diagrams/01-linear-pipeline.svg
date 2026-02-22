@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 100" font-family="system-ui, -apple-system, sans-serif">
+  <style>
+    .box { stroke: #1e1e1e; stroke-width: 1.5; rx: 6; }
+    .role { fill: #a5d8ff; }
+    .endpoint { fill: #b2f2bb; }
+    .label { font-size: 13px; fill: #1e1e1e; text-anchor: middle; dominant-baseline: central; }
+    .arrow { stroke: #1e1e1e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+
+  <rect class="box endpoint" x="10" y="30" width="70" height="40"/>
+  <text class="label" x="45" y="50" font-weight="bold">IDEA</text>
+
+  <line class="arrow" x1="82" y1="50" x2="98" y2="50"/>
+  <rect class="box role" x="100" y="30" width="90" height="40"/>
+  <text class="label" x="145" y="50">PM</text>
+
+  <line class="arrow" x1="192" y1="50" x2="208" y2="50"/>
+  <rect class="box role" x="210" y="30" width="90" height="40"/>
+  <text class="label" x="255" y="50">PO</text>
+
+  <line class="arrow" x1="302" y1="50" x2="318" y2="50"/>
+  <rect class="box role" x="320" y="30" width="90" height="40"/>
+  <text class="label" x="365" y="50">BA</text>
+
+  <line class="arrow" x1="412" y1="50" x2="428" y2="50"/>
+  <rect class="box role" x="430" y="30" width="90" height="40"/>
+  <text class="label" x="475" y="50">Architect</text>
+
+  <line class="arrow" x1="522" y1="50" x2="538" y2="50"/>
+  <rect class="box role" x="540" y="30" width="90" height="40"/>
+  <text class="label" x="585" y="50">Tech Lead</text>
+
+  <line class="arrow" x1="632" y1="50" x2="648" y2="50"/>
+  <rect class="box role" x="650" y="30" width="90" height="40"/>
+  <text class="label" x="695" y="50">Engineer</text>
+
+  <line class="arrow" x1="742" y1="50" x2="758" y2="50"/>
+  <rect class="box role" x="760" y="30" width="90" height="40"/>
+  <text class="label" x="805" y="50">QA</text>
+
+  <line class="arrow" x1="852" y1="50" x2="868" y2="50"/>
+  <rect class="box role" x="870" y="30" width="110" height="40"/>
+  <text class="label" x="925" y="50">Release Mgr</text>
+
+  <line class="arrow" x1="982" y1="50" x2="998" y2="50"/>
+  <rect class="box endpoint" x="1000" y="30" width="85" height="40"/>
+  <text class="label" x="1042" y="50" font-weight="bold">REALITY</text>
+</svg>
