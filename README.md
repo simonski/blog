@@ -1,4 +1,3 @@
 # blog
 
-https://agenticsoftware.github.io/blog/
-
+My blog at blog.simonski.com
