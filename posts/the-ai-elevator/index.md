@@ -1,3 +1,6 @@
+title: the ai elevator
+date: 2026-02
+-------------------------------------------------------------------------------
 # The AI Elevator
 
 Inspired by Yegge's [Gastown](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) and  Neal.fun's [Space Elevator](https://neal.fun/space-elevator/), I created the [ai elevator!](https://ai-elevator.simonski.com)

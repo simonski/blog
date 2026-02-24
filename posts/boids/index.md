@@ -1,5 +1,6 @@
-# 2026-02-22
-
+title: boids
+date: 2026-02-22
+-------------------------------------------------------------------------------
 I was at the beach Friday on a short vacation.  We saw perhaps a hundred birds flocking, it was beautiful.  
 
 I remembered a conversation I had a week past thursday at the LSEG AI Hub evening talk with an interesting chap from Bristol; among many things he worked on was Drone Shows, using boids.
