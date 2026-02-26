@@ -70,7 +70,7 @@ That is, the job more-or-less is like a baton, handed on to the next in line.
 
 In fact what happens is everyone talks to everyone - sometimes.  The Engineer clarifies a point with the QA who talks to the BA and the release manager coordinates with the Engineering Director.  And so on.
 
-![](diagrams/image2 .png)
+![](diagrams/image2.png)
 
 ## Teams are fallible and inconsistent
 
@@ -98,7 +98,7 @@ How does software get built to any reasonable quality?
 
 What happens is roles get together in a little council and decide to agree or to disagree - on the definition of the job, on how many tasks it is decomposed into, on the acceptance criteria, the outcome of work being successful or not, whether the tests are useful or not.  
 
-![Consensus](diagrams/08-consensus.svg)
+![](diagrams/image3.png)
 
 This council happens in micro-meetings with perhaps some established processes or ceremonies - (set ticket FOO-123 status to "in test") - but it also happens adhoc in methods we have not properly captured.
 
@@ -108,23 +108,23 @@ Where there is NO consensus, escalation occurs. It is possible we will learn tha
 
 ## Work is carried out by a Role
 
-Work is carried out by a discretely named ROLE - for example a Business Analyst.   A role has motivation, skills and relationships.
+Work is carried out by a discretely named Role - for example a Tech Lead. A role has motivation, skills and relationships. 
 
-![Role](diagrams/03-the-role.svg)
+![](diagrams/image4.png)
 
-The outcome of work is then received by other ROLEs with different motivations - those roles will implicitly or explicitly appraise the quality of work, using or rejecting it.
+The output of the work is informed by all the aspects of the role itself, combined with the task at hand.
+
+This output - the work - is then received by other Roles with different motivations Those Roles will then appraise the quality of work.
 
 This is as true for a written document as it is for a unit test or a video game.
 
-This means any piece of work would have a history of effort and outcome for all the roles that "worked" on the work.
+Our system then must capture the Role definition, motivations, skills and relationships accurately.
 
 ## There is no implicit memory
-
 
 Memory in a company is "institutional" - stored in the employees.  The challenge is that the HUMAN currently IS the ROLE - meaning they are not differentiated effectively, so "tribal knowledge" remains in the head of a specific human.
 
 ![Skills](diagrams/05-skills.svg)
-
 
 This means there is no such thing as a "QA Engineer" - rather there is a "QA Engineer called Sally".
 
@@ -145,6 +145,11 @@ The theory is the state - the memory - is the aggregation of ROLES, SKILLS and a
 ## Work is a living document
 
 For any piece of work then, it will have lineage - the effort taken, by who and when, the outcome of that work.  This state represents the "history of the story" and can be useful informing future decisions.
+
+This means any piece of work would have a history of effort and outcome for all the roles that "worked" on the work.
+
+
+
 
 ![Living Document](diagrams/07-living-document.svg)
 
