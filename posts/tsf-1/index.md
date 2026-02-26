@@ -5,9 +5,9 @@ date: 2026-02
 
 ## Introduction
 
-Can a system of agents replace the traditional SDLC? should it? - The Software Factory (tsf) is an approach to answer this question.
+Can a system of agents replace the traditional SDLC? *should it?* - The Software Factory (tsf) is an approach to answer this question.
 
-The GOAL is to automate and augment the current SDLC process where we expect to improve productivity. 
+The goal is to improve productivity through automation and augmentation of the current SDLC process.
 
 The desired outcomes are:
 
@@ -15,14 +15,14 @@ The desired outcomes are:
   - the number of programmers in the loop can be reduced for the same or greater amounts of work
   - the number of agents in the loop is increased
   - the quality of the work either is maintained or improves
-  - further understanding of agentic engineering practices
-  - data to better understand cost-value in software engineering
+  - we obtain greater understanding of agentic engineering practices
+  - we capture data to better understand cost-value in software engineering
 
 ## Key challenges
 
 - Trust/Hallucinations
 
-How do we establish trust if the human is taken out of the loop? How do we trust a computer will both create the code and tell us that the code is correct? What do we do about hallucinations?
+How do we establish trust if the human is taken out of the loop? How do we trust an agent will both create the code and tell us that the code is correct? What do we do about hallucinations?
 
 - Repeatability
 
@@ -30,9 +30,9 @@ How can we demonstrate a given requirement will result in an expected outcome, r
 
 - Provability
 
-How can we "show our workings" to demonstrate WHY a given outcome occurred?
+How can we "show our workings" to demonstrate why a given outcome occurred?
 
-TSF approach is to model the roles and processes we have now and automate them.  Applying this process across the software engineering stack is the experiment.
+TSF approach is to model the roles and processes we have now then automate them.  Applying this process across the software engineering stack is the experiment.
 
 Insights
 --------
@@ -64,13 +64,13 @@ I *thought* that software went from an IDEA through some PROCESS to REALITY.   Z
 - Release Manager ->
 - **REALITY**
 
-![Idea](diagrams/01-linear-pipeline.svg)
+![](diagrams/image1.png)
 
 That is, the job more-or-less is like a baton, handed on to the next in line.  
 
 In fact what happens is everyone talks to everyone - sometimes.  The Engineer clarifies a point with the QA who talks to the BA and the release manager coordinates with the Engineering Director.  And so on.
 
-![Reality](diagrams/02-nonlinear-reality.svg)
+![](diagrams/image2 .png)
 
 ## Teams are fallible and inconsistent
 
@@ -86,21 +86,23 @@ The prior examples will be addressed through modelling of system processes.  Whe
 
 ## LLMs are fallible and inconsistent.
 
-An LLM will hallucinate and/or output poor quality.  The purpose of a COUNCIL is to assess the outcome and decide on the next best step.  
+An LLM will hallucinate and/or output poor quality.  The purpose of a COUNCIL is to assess a given task outcome and decide on the next best step.  
 
 This means task outcomes that result in poor quality are both accepted as a risk and mitigated through the council themselves.
 
-In fact we are not attempting to change a foundational model here - hallucinations are actually baked into the system of LLMs.  Indeed we accept this as a risk and then mitigate it via the decomposition, council and consensus.
+In fact we are not attempting to change a foundational model here - hallucinations are actually baked into the system of LLMs.  Indeed we accept this as a risk and then mitigate it via decomposition of work to reasonably described tasks, council and consensus.
 
 ## Consensus in teams is what drives progression
 
-How does software get built to any reasonable quality? - what happens is some roles get together in a little council and decide to agree or disagree - the definition of the job, the outcome of work being successful or not.  
+How does software get built to any reasonable quality?
+
+What happens is roles get together in a little council and decide to agree or to disagree - on the definition of the job, on how many tasks it is decomposed into, on the acceptance criteria, the outcome of work being successful or not, whether the tests are useful or not.  
 
 ![Consensus](diagrams/08-consensus.svg)
 
-This happens in micro-meetings with perhaps some established processes or ceremonies - (set ticket FOO-123 status to "in test") - but it also happens adhoc in methods we have not properly captured.
+This council happens in micro-meetings with perhaps some established processes or ceremonies - (set ticket FOO-123 status to "in test") - but it also happens adhoc in methods we have not properly captured.
 
-The progression of any work is as a result of CONSENSUS.   Where work proceeds with consensus of 1 (That is, the engineer says: it works, trust me), is where there is high risk.
+The progression of any work is as a result of CONSENSUS.   Where work proceeds with consensus of 1 (That is, the engineer says: it works, trust me), this where there is high risk.
 
 Where there is NO consensus, escalation occurs. It is possible we will learn that some outcomes cannot be decided autonomously - the system could escalate/defer to the HUMAN in the loop.  This is not strictly a failure - rather an outcome we will learn from.   This escalation may inform higher quality role descriptions, yielding fewer escalations.
 
@@ -118,12 +120,11 @@ This means any piece of work would have a history of effort and outcome for all 
 
 ## There is no implicit memory
 
-There can be no place for tribal knowledge in an automated system.  
+
+Memory in a company is "institutional" - stored in the employees.  The challenge is that the HUMAN currently IS the ROLE - meaning they are not differentiated effectively, so "tribal knowledge" remains in the head of a specific human.
 
 ![Skills](diagrams/05-skills.svg)
 
-
-Memory in a company is "institutional" - stored in the employees.  The challenge is that the HUMAN currently IS the ROLE - meaning they are not differentiated effectively, so "tribal knowledge" remains in the head of a specific human.
 
 This means there is no such thing as a "QA Engineer" - rather there is a "QA Engineer called Sally".
 
@@ -135,7 +136,7 @@ A ROLE containing as much of the institutional memory as possible - describes th
 
 SKILLs - reusable technology capabilities that a ROLE calls upon to achieve a given objective. 
 
-STORY - the objective itself.  A task contains the objective itself, its history, which roles did-what to it.   The data model for a task then is significant as it will contain sections that are effectively a living document of change.
+STORY - A given pece of work contains the description of the objective itself, acceptance criteria, its place in the hierarchy, then it also contains its history, which roles did what to it, and their outcomes.  The data model for a task then is significant as it will contain sections that are effectively a living document of change.
 
 ![The Story](diagrams/04-the-story.svg)
 
@@ -143,7 +144,7 @@ The theory is the state - the memory - is the aggregation of ROLES, SKILLS and a
 
 ## Work is a living document
 
-For any piece of work then, it will have lineage - the effort taken, by who and when, the outcome.  This state represents the "history of the story" and can be useful informing future decisions.
+For any piece of work then, it will have lineage - the effort taken, by who and when, the outcome of that work.  This state represents the "history of the story" and can be useful informing future decisions.
 
 ![Living Document](diagrams/07-living-document.svg)
 
@@ -154,6 +155,23 @@ Caution will be needed as there is no upperbound to the history of a given probl
 As WORK is completed by a ROLE, the outcome will then be assessed by a COUNCIL.   This is effectively another role - a "role of roles", which acts as the motivation to decide what is the appropriate next step.
 
 ![Council](diagrams/06-the-council.svg)
+
+```text
+INTERACTION (ASCII)
+
++--------+   +---------+   +----------------------+
+| ROLE 1 |-> | OUTCOME |-> | COUNCIL              |
+| works  |   | "done"  |   | Role A/B/C assess    |
++--------+   +---------+   +----------+-----------+
+                                      / \
+                                     /   \
+                                   OK   NOT OK
+                                   |      |
+                          +------------+ +------------+
+                          | ROLE 2     | | ROLE 3     |
+                          | next work  | | rework     |
+                          +------------+ +------------+
+```
 
 It is NOT that the work is DONE, it is more that the work of the prior ROLE is finished for now and the decision to progress the work in any direction is the result of the council decision.
 
@@ -208,6 +226,35 @@ This document proposed an approach to automate SDLC. The challenges of Trust, Re
 
 ![The Software Factory](diagrams/09-full-factory.svg)
 
+```text
+COMPONENTS (ASCII)
+
++----------------+   +------------------+   +----------------+
+| OPERATOR       |-->| ROLE DEFINITIONS |<->| SKILLS LIBRARY |
+| (human)        |   | BA/Arch/Eng/QA   |   | shared skills  |
++----------------+   +------------------+   +----------------+
+
++--------+ -> +---------+ -> +--------------+ -> +----------+
+| STORY  |    | ROLE:BA |    | COUNCIL (OK) |    | ROLE:ENG |
++---+----+    +----+----+    +------+-------+    +-----+----+
+    ^              |                |                  |
+    |              +----------------+------------------+
+    |                   rework loop (as needed)
+    +------------------------------------------------------------+
+                                 |
+                                 v
+                         +-----------------+
+                         | LIVING DOCUMENT |
+                         | history/log     |
+                         +--------+--------+
+                                  |
+                                  v
+                           +--------------+
+                           | ESCALATION   |
+                           | no consensus |
+                           +--------------+
+```
+
 The first version, tsf-1, will attempt to implement a reference factory and stop as it arrives at evolutionary roles.   This means tsf1 will be
 
 - a ticket engine
@@ -226,4 +273,3 @@ In the first iterations of tsf, a HUMAN operator will need to describe the ROLEs
 This means the first version of the system will need simple to use tools (CLI, Website) to allow an operator to define, refine and experiment.
 
 Consensus loosely can be described as "all ROLES in the current state of the work accept the outcome meets their objectives".   This assumes each ROLE is of a high enough quality that we are not collapsing in a house of cards of false positives.  Hence iteration in bootstrapping.
-
