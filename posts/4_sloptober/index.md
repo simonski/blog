@@ -1,6 +1,5 @@
-# The Long Sloptober
-
-2026-06-07/8 DRAFT
+title: the long sloptober
+date: 2026-06
 
 ## Introduction
 

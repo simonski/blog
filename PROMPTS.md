@@ -1,5 +1,52 @@
 PROMPTS
 
+update the go and makefile to create a binary blogtool 'blog' with the following commands
+
+    blog
+        shows usage in multiline format
+
+    blog init
+        creates a new "blog" folder containing files, fails if folder already exists
+
+    blog server
+        serves static content from current directory
+
+    blog post
+        create new blog post
+
+    blog idea
+        create new idea post
+
+    blog ls
+        list posts and ideas sorted by most recent
+            id, type, updated, title
+
+    blog edit N
+        opens vscode on the source content
+
+    blog post "the title"
+        create new post "the title"; fail if already exists, case-insensitive
+        this will translate to
+            posts/{id}_{compressed_title}/<template-files-token-switched>
+
+    blog idea "the title"
+        create new idea "the title"; fail if already exists, case-insensitive
+        this will translate to
+            ideas/{id}_{compressed_title}/<template-files-token-switched>
+
+ID is an incrementing integer
+
+split the blog into two areas - blogposts and ideas
+    
+    blog/posts
+    blog/ideas
+
+templates
+    update to contain templates by type including site templates
+        templates/site
+        templates/posts
+        templates/ideas
+
 create a makefile with targets
     build:
         runs a go script to create the site
@@ -7,6 +54,9 @@ create a makefile with targets
         serves the output directory on localhost:8000
     deploy:
         deploys the content using rsync to the root of blog.simonski.com
+
+
+create an atom/rss feed for all content, update the makefiç
 
 make <default> is "build run"
 
