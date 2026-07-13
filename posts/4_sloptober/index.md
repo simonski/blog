@@ -18,7 +18,7 @@ Achieved by
 - prompting an agentic harness
 - adoption of agents, skills, tools
 
-Humans never used to send me code.  Programmers did.  Now I get oceans of code from people who used to be programmers, or never were, but are now.  I woudl seldom get a written paper with enthusiastic advocacy for a widget, now it is weekly.  Those people still don't write those things, but AI does for them.   And now those documents are 11 pages to read.  But the diagrams look nice.
+Humans never used to send me code.  Programmers did.  Now I get oceans of code from people who used to be programmers, or never were, but are now.  I would seldom get a written paper with enthusiastic advocacy for a widget, now it is weekly.  Those people still don't write those things, but AI does for them.   And now those documents are 11 pages to read.  But the diagrams look nice.
 
 # Good Ideas 
 

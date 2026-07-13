@@ -61,19 +61,19 @@ Note: all stages are a mix of a human and agent(s)
 
 ## Team Size
 
-Engineering squads shoudl drop to a smidge above the bus factor, so - three humans.  
+Engineering squads should drop to a smidge above the bus factor, so - three humans.  
 
 We end up with 2x or 3x squads from what we had before, enabling "do more with same", or "do same with less".  We will shift or grow cost towards tokens.
 
 ## Powered by
 
-A software factory.   A common engineering process that yields the software outcome of the feature.  Teh reailty is the SF is like an F-117a or F1 car - neither work without a team of engineers that make them into a PLane or Car seconds before they take off.  When they are static, they are useless lumps of material.  Same with engineering.
+A software factory.   A common engineering process that yields the software outcome of the feature.  The reailty is the SF is like an F-117a or F1 car - neither work without a team of engineers that make them into a PLane or Car seconds before they take off.  When they are static, they are useless lumps of material.  Same with engineering.
 
 Some conundrums
 
 Jnr Engineers (and other non-junior humans) *need* the company of others.  Therefore the burden of leadership requires that the Engineering Manager needs to effectively manage the team.  
 
-There is a conundrum which is we do need to estimate, so there is some *form* of story pointing - however the implementation *should* not be considered a multi-week concept anymore, rather it shoudl be agents chirning for hours/days.  
+There is a conundrum which is we do need to estimate, so there is some *form* of story pointing - however the implementation *should* not be considered a multi-week concept anymore, rather it should be agents chirning for hours/days.  
 
 In the aggregate this *does* add up to weeks, but the sprint concept ahs had its time.  It is no longer necessary.    
 

@@ -4,7 +4,7 @@ date: 2026-06-21
 The AI Providers exist to represent "usage of a given model in a given provider". this means they
 need to be created and store e.g. endpoints, identities, API keys.
 
-Once the AI Provider is created and validated - taht is, it should be possible to say "hello" and get a response back, it can then be makred as "ready" and then it can be assigned to a given project.
+Once the AI Provider is created and validated - that is, it should be possible to say "hello" and get a response back, it can then be makred as "ready" and then it can be assigned to a given project.
 
 An AI Provider can be copied - so that the configuration is re-used but a different API KEY is attached and therefore the billing is directed to different areas.
 

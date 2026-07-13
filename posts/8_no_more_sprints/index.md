@@ -3,7 +3,7 @@ date: 2026-06-21
 
 I want to test removing sprints altogether and think more about releases, where a release is a set of features, where a feature is a set of epics, where an epic is a set of stories.
 
-this means the arrangement of stories woudl be
+this means the arrangement of stories would be
 
 1. a backlog containing epics and stories
 2. a story links to an epic
@@ -42,8 +42,8 @@ Release
     tracks dates of change of status
 
 Feature
-    This is a ticket of type feature which is the "grand plan"of what it is that is necesary.  This will
-    be refined with a human and agent using teh feature ticket as well as the codebase and all project documentation.
+    This is a ticket of type feature which is the "grand plan"of what it is that is necessary.  This will
+    be refined with a human and agent using the feature ticket as well as the codebase and all project documentation.
 
 These entities apply to a project.
 

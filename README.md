@@ -1,18 +1,29 @@
 # blog
 
+This is the repo for my https://blog.simonski.com - it uses https://github.com/simonski/blogtool and runs on https://exe.dev
+
 ## Setup
 
-```bash
-. .venv/bin/activate
-uv sync
-make build
-```
+    https://github.com/simonski/blog.git
+    brew install simonski/tap/blog
+    blog init
+    blog upgrade
 
 ## Running
 
+    blog live
 
-The content for [https://blog.simonski.com]()
+## Create a post
 
-It is hosted on github pages - just push to main.
+    blog post "foo"
 
-The links will generally go to exe.dev VMs.
+    blog idea "bar"
+
+## Deploy it all 
+
+This deploys to exe.dev which is already running the static content.
+
+    ./deploy.sh
+
+    
+

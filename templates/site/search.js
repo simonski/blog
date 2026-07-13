@@ -14,6 +14,22 @@
   var list = null;
   var selected = 0;
 
+  /* When this site is served by the blog binary with an admin password set,
+     /__editor/ping answers and typing "login" in the search popup offers the
+     in-browser editor. On a plain static host the probe 404s and the entry
+     never appears. */
+  var editorAvailable = false;
+  var editorProbed = false;
+  function probeEditor() {
+    if (editorProbed) {
+      return;
+    }
+    editorProbed = true;
+    fetch(root + "__editor/ping")
+      .then(function (res) { editorAvailable = res.ok; })
+      .catch(function () {});
+  }
+
   function loadIndex() {
     if (entries) {
       return Promise.resolve(entries);
@@ -78,11 +94,20 @@
       return [];
     }
     var terms = q.split(/\s+/);
-    return entries
+    var results = entries
       .map(function (e) { return { entry: e, rank: score(e, terms) }; })
       .filter(function (r) { return r.rank >= 0; })
       .sort(function (a, b) { return a.rank - b.rank; })
       .map(function (r) { return r.entry; });
+    if (editorAvailable && q.length >= 3 && "login".indexOf(q) === 0) {
+      results.unshift({
+        title: "login",
+        kind: "editor",
+        labels: [],
+        href: root + "__editor/"
+      });
+    }
+    return results;
   }
 
   function render(results) {
@@ -166,7 +191,7 @@
 
     input = document.createElement("input");
     input.type = "text";
-    input.placeholder = "search posts and ideas...";
+    input.placeholder = "search posts, ideas and projects...";
 
     list = document.createElement("ul");
 
@@ -192,6 +217,7 @@
 
   function open() {
     ensureOverlay();
+    probeEditor();
     loadIndex().then(function () {
       document.body.appendChild(overlay);
       input.value = "";
