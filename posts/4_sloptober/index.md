@@ -57,11 +57,11 @@ When I find an equivalent of "let's break this down" - which is to say, a writte
 
 What I do is put the authors work into a slop bin in my head. I have found myself losing respect for the (AI)written word.  The danger is that I miss the human written word.  The other danger is that the human *did not truly read/write their own homework*.  This is slop.  If it takes me longer to read that it did to write, it is slop.
 
-A conundrum - I will not write code again, much.  I mean, I will never not write code - but mostly I will tell claude to do it seldom using vim myself.  That's ok.  It's actually amazing and great, but Deep Blue gets me sometimes.
+A conundrum - I will not write code again, much.  I mean, I will *never* not write code - but mostly I will tell Claude to do it for me, seldom using vim myself.  That's ok.  It's actually amazing and great, but The Deep Blue of it does get me sometimes.
 
 ### Engineering Culture
 
-I hated the sycophancy from the early agents and told them not to tell me how wise I was in a CLAUDE.md.  They stopped.  Then AGENTS.md rocked up because standards and I put them in two places.  But really I keep reverting to claude.   I see documntation explaining how great the thign is they document is explaining and I do not want advocacy in the document itself.
+I hated the sycophancy from the early agents and told them not to tell me how wise I was in a CLAUDE.md.  They stopped.  Then AGENTS.md rocked up because standards and I put them in two places.  But really I keep reverting to claude.   I see documntation explaining how great the thing is they document is explaining and I do not want advocacy in the document itself.
 
 ### Quality
 
@@ -75,3 +75,6 @@ Signal to noise is off the scale, and we have not yet accepted it.
 - not finished / permanent refactoring
 - runs on my machine / requires a special setup
 - requires author to explain / be present
+- the repository advocates for its own existence
+
+It doesn't mean that any of the above forces it to actually be classified as slop, rather they are signals that - err, we could give to a Sorting Hat agent to pronounce "slop or not!"
