@@ -4,7 +4,7 @@ labels: a
 -------------------------------------------------------------------------------
 # The AI Elevator
 
-Inspired by Yegge's [Gastown](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) and  Neal.fun's [Space Elevator](https://neal.fun/space-elevator/), I created the [ai elevator!](https://ai-elevator.simonski.com)
+Inspired by Yegge's [Gastown](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) and  Neal.fun's [Space Elevator](https://neal.fun/space-elevator/), I created the [ai elevator!](https://ai-elevator.exe.xyz)
 
 ## Lobby 
 
